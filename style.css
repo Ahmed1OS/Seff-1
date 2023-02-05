@@ -1,0 +1,926 @@
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.cont1 {
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    background-image: url('images/marvel.jpg');
+}
+.cont1::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.254);
+    content: "";
+}
+.header {
+    width: 100%;
+    position: fixed;
+    background-color: rgba(245, 245, 245, 0.921);
+    border: 1px solid whitesmoke ;
+    z-index: 20;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.header img {
+    height:60px;
+    margin: 5px 110px 5px 111px;
+    float: left;
+}
+.header div {
+    margin: 0;
+    display: inline-block;
+    height: 70px;
+    text-align: center;
+}
+.menu {
+    float: left;
+    width: 46%;
+    margin-left: 7px;
+}
+.menu-ul {
+    margin: 28px 0px;
+}
+.menu-li , .menu-li1{
+    display: inline-block;
+    margin: 0px 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    position: relative;
+}
+.menu-li a::after , .menu-li1 a::after {
+    content: "";
+    background-color: red;
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    top: 20px;
+    left: .5px;
+    display: block;
+    margin-left: 3px;
+    transition: 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu-li a:hover::after {
+    margin-top: 2px;
+    width: 40px;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+.menu-li1 a:hover::after {
+    margin-top: 2px;
+    width: 53px;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+.user-icon {
+    float: right;
+    width: 25%;
+}
+.user-icon i {
+    font-size: 2.3rem;
+    float: right;
+    margin: 20px 117px;
+    color: black;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+}
+.txt-div {
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    color: whitesmoke;
+}
+.txt-div span {
+    font-size: 70px;
+    font-family: 'Roboto Slab', serif;
+
+    font-weight: 500;
+    margin: 0;
+}
+.txt-div p {
+    margin: 10px auto 40px;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+.txt-div .bttns button {
+    width: 140px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    background-color:whitesmoke;
+    color: black;
+    margin: 0px 5px;
+    font-weight: 500;
+    padding: 13px;
+    cursor: pointer;
+}
+.txt-div .bttns .go {
+    background-color: red;
+    border: none;
+    color: white;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+.cont2 .cont2-head {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 100px;
+    font-family: 'Roboto Slab', serif;
+}
+hr {
+    width: 15%;
+    
+    border: 1px solid red;
+margin:  10px auto;
+}
+.cont2 {
+    height: 100vh;
+    margin: 0px;
+}
+.boxs {
+    width: 90% ;
+    margin:  0px auto;
+    height: 600px;
+}
+.boxs .box1 {
+    width: 350px;
+    height: 250px;
+    border: 1px solid red;
+    margin: 50px 3%;
+    border-radius: 35px;
+    float: left;
+    position: relative;
+}
+.box1:hover i , .box1:hover #ahov {
+    color: red;
+}
+ .box1::before {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    background-color:rgba(255, 0, 0, 0.39);
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    border-radius: 35px;
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+}
+.box1:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+.box1 i , .box1 .spanbox1 , .box1 a , .box1 p  {
+    display: block;
+    text-align: center;
+    margin: 0;
+}
+.box1 i {
+    font-size: 2rem;
+    height: 25px;
+    margin-top: 20px ;
+}
+.box1 .spanbox1 {
+    font-size: 2.5rem;
+    margin: 25px auto;
+}
+.box1-txt {
+    height: calc(250px - 25px);
+}
+.box1 p {
+    margin: 25px auto;
+
+}
+.box1 a {
+    margin: 25px auto;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+.cont3 {
+    background-color: whitesmoke;
+    height: 200vh;
+    margin: 0;
+    background-image: url('images/marvel.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+.cont3::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.254);
+    content: "";
+    z-index: -1;
+}
+.cont3 .cont3-head {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 100px;
+    font-family: 'Roboto Slab', serif;
+    color: whitesmoke;
+}
+.cont3-hr {
+    border: 1px solid whitesmoke;
+    width: 15%;
+}
+.contboxes {
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    position: relative;
+
+}
+.movies-frame {
+    width: 300px;
+    height: 350px;
+    margin:50px 64px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+}
+.movies-frame img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.movies-frame::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 0px;
+    background-color: rgba(0, 0, 0, 0.433);
+    backdrop-filter: blur (1px);
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+}
+.movies-frame:hover::after {
+    height: 350px;
+    opacity: 1;
+    visibility: visible;
+    transition: 2s;
+}
+.movies-frame .frame-txt {
+    margin: auto;
+    text-align: center;
+    color: black;
+    color: whitesmoke;
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    font-weight: bold;
+    z-index: 11;
+    opacity: 0;
+    visibility: hidden;
+
+}
+.movies-frame:hover .frame-txt {
+    transition: 3s;
+    opacity: 1;
+    visibility: visible;
+
+}
+.frame-txt .title {
+    font-size: 1.5rem;
+    font-family: 'Roboto Slab', serif;
+    margin: 10px auto;
+}
+.frame-txt i {
+    margin: 15px 10px;
+    font-size:1.5rem ;
+    color: whitesmoke;
+} 
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+.cont4 {
+    width: 100%;
+    height: 105vh;
+    margin: 0;
+    background-color: white;
+    position: relative;
+    top: 0px;
+}
+ .cont4-head {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 100px;
+    font-family: 'Roboto Slab', serif;
+}
+.cont4-hr {
+    width: 15%;
+    }
+
+.cont4 .cont-content {
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+}
+.cont4-frame {
+    width: 340px;
+    height: 200px;
+    margin: 45px 40px ;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid rgba(128, 128, 128, 0.292);
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    z-index: 5;
+
+    
+}
+.cont4-frame::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    border-radius: 10px;
+    content: "";
+    background-color: rgba(0, 255, 255, 0.203);
+    background-color: rgba(72, 72, 72, 0.576);
+    background-color: whitesmoke;
+    transition: 1s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+}
+.cont4-frame:hover::before {
+width: 340px;
+height: 200px;
+visibility: visible;
+opacity: 1;
+transition: 1s;
+}
+
+
+
+
+.icotxt {
+    font-size: 30px;
+    margin: 25px 0px;
+    z-index: 5;
+}
+.icotxt span {
+    margin-right: 30px;
+    font-family: 'Roboto Slab', serif;
+}
+.icotxt i {
+padding-right: 30px;
+color: red;
+
+}
+.cont4-frame p {
+    margin-left: 135px;
+    width: 192px;
+    height: 90%;
+    text-align: left;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+.cont5 {
+    width: 100%;
+    height: 65vh;
+    margin: 0;
+    position: relative;
+    top: 0px;
+}
+.cont5 .wcu {
+    display: inline-block;
+    text-align: center;
+    font-size: 3rem;
+}
+.contentBOX {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 60vh;
+    clear: both;
+    margin-top: 200px;
+}
+.divONE {
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+.divONE .wcu {
+    margin: 30px auto 10px;
+}
+.divONE p {
+    width: 310px;
+    height: 50px;
+    margin: 0px 210px;
+    text-align: center;
+}
+.cho{
+    width: 300px;
+margin-left: 160px;
+}
+.cho .why{
+    display: block;
+    margin: 30px 10px;
+}
+.cho .why i {
+    margin: 5px 5px;
+}
+.divTWO {
+    float: right;
+    height: 100%;
+    width: 49%;
+}
+.divTWO img {
+    width: 60%;
+    height: 90%;
+    object-fit: cover;
+    margin: 25px;
+    
+}
+.mrvl {
+    width: 20%;
+    border: 1px solid red;
+margin:  0px auto 20px;
+}
+.bgpic {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    top: 0;
+    margin-top: 200px;
+    background-image: url('images/marvel.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.oveybg {
+    background-color: rgba(0, 0, 0, 0.403);
+    width: 100%;
+    height: 40vh;
+}
+.bigcont {
+    width: 90%;
+    height: 30vh;
+    margin: auto;
+}
+
+.boX {
+    width: 100px;
+    height: 100px;
+float: left;
+margin: 80px 110px;
+color: white;
+}
+.boX i {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    color: red;
+    margin: 20px auto;
+}
+.boX span {
+    display: block;
+    text-align: center;
+    margin: 15px;
+    font-size: 1.6rem ;
+    font-family: 'Roboto Slab', serif;
+}
+.boX .SPANTWO {
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+.plans {
+    border: 3px solid whitesmoke;
+    width: 63.1%;
+    height: 500px;
+    margin: 50px 261px;
+    border-radius: 4px;
+}
+.circle {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid whitesmoke;
+}
+.pone {
+    background-color: white;
+    color: black;
+    height: 500px;
+    width: 300px;
+    display: inline-block;
+    margin: 0px 0px;
+    position: relative;
+    z-index: 4;
+}
+.pone::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0px;
+    width: 300px;
+    background-color: rgba(255, 0, 0, 0.865);
+    content: "";
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+.pone:hover::after {
+    height: 500px;
+    opacity: 1;
+    visibility: visible;
+    transition: 1s;
+}
+.pone .th {
+    height: 50px;
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-family: 'Roboto Slab', serif;
+}
+.pone .pri {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+.pone ul {
+    margin-top: 30px;
+    margin-left: 23px;
+}
+.pone li i {
+    margin: 12px 10px;
+}
+.pone li {
+    list-style: none;
+}
+.des {
+    margin-left: 5px;
+}
+.pone button  {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    color: black;
+    margin-left: 85px;
+    margin-top: 20px;
+    width: 125px;
+    height: 35px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+.pone:hover .des , .pone:hover li {
+    color: white;
+} 
+.pone:hover .pri  , .pone:hover .th{
+    color: whitesmoke;
+} 
+.pone:hover button {
+    color: red;
+    transition: 1s;
+}
+.pcingl {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 100px;
+    margin: 30px 0px;
+    font-family: 'Roboto Slab', serif;
+}
+.pplist {
+    border: 1px solid red;
+    width: 20%;
+    margin: 10px 0px;
+    display: block;
+    margin: auto;
+}
+.bgpic2 {
+    width: 100%;
+    height: 40vh;
+    margin: auto;
+    
+    background-image: url('images/marvel.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bigcont2 {
+    width: 90%;
+    height: 40vh;
+    margin: auto;
+}
+.oveybg2 {
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 100%;
+    height: 40vh;
+}
+.framey {
+    width: 350px;
+    height: 250px;
+    margin: 35px 140px ;
+    float: left;
+}
+.framey .spanimg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-image: url('images/wally.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px 30px;
+    float: left;
+}
+.framey .picntxt {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+.framey .txty {
+    display: inline-block;
+    width: calc(100% - 200px);
+    margin: 25px 0px;
+}
+.pictxt {
+    display: inline-block;
+    width: 70%;
+    margin: 5px 0px;
+    font-weight: 600;
+}
+.pp {
+    margin: 50px 40px;
+    width: 90%;
+    height: 150px;
+    text-align: left;
+    color: white;
+    
+}
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+.cont6 {
+    height: 80vh;
+    text-align: center;
+    background-color: whitesmoke;
+}
+.ourteam {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 100px;
+    font-family: 'Roboto Slab', serif;
+}
+.conter {
+    width: 90%;
+    margin: auto;
+    height: 55vh;
+}
+.diivONE {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    background-color: whitesmoke;
+    border:5px solid whitesmoke;
+    margin: 50px;
+    text-align: center;
+    border-radius: 20px;
+
+}
+.spanimg2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background-image: url('images/wally.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 35px auto 10px;
+}
+.diivONE .diitxt {
+    display: block;
+    margin: 10px 0px;
+}
+.done {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+.cont7 {
+    height: 100vh;
+    text-align: center;
+    background-color: white;
+}
+.cont7 .News {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 100px;
+    font-family: 'Roboto Slab', serif;
+}
+.conter2 {
+    width: 90%;
+    margin: auto;
+    height: 80vh;
+}
+
+.post {
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    color: black;
+    text-align: center;
+    width: 350px;
+    height: 550px;
+    display: inline-block;
+    margin: 50px 35px;
+    border-radius: 5px;
+}
+.spanimg3 {
+    width: 300px;
+    height: 200px;
+    border-radius: 0px;
+    background-image: url('images/wally.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px auto 10px;
+}
+
+.posthead {
+    width: 100%;
+    height: 50px;
+}
+.posthead .spanimg4 {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-image: url('images/wally.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 6px 10px;
+    float: left;
+}
+.pictxt2 {
+    text-align: center;
+    float: right;
+    margin: 16px 20px;
+    font-weight: 600;
+}
+.spanimg3 {
+    width: 350px;
+    height: 200px;
+    border-radius: 0px;
+    background-image: url('images/marvel.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin: 10px auto 10px;
+}
+.ulpost {
+    display: block;
+    text-align: center;
+    margin: 0px 0px 0px -35px;
+}
+.ulpost li {
+    display: inline-block;
+    margin-right: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+.ulpost li i {
+margin-right: 5px;
+color: black;
+}
+.ulpost li .des2 {
+    margin: 0px 5px;
+        color: black;
+}
+.pst {
+    width: 350px;
+    height: 90px;
+    text-align: justify;
+    word-spacing: -4px;
+    margin:  20px auto 80px;
+
+}
+.rmore{
+    display: block;
+    margin: 80px 0px 10px;
+    height: 30px;
+}
+.post:hover .rmore {
+    color: red;
+}
+.iicons {
+    border-top: 1px solid grey;
+    width: 100%;
+    margin: auto;
+    margin-top: 25px;
+    line-height: 3;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+.footer {
+    width: 100%;
+    height: 50vh;
+    margin: 70px auto 0px;
+    position: relative;
+    background-image: url('images/marvel.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.oveybg2 {
+    background-color: rgba(0, 0, 0, 0.727);
+    width: 100%;
+    height: 50vh;
+}
+.lastcont {
+    position: relative;
+    top: 0px;
+    margin: 0px auto;
+    width: 40%;
+    height: 50vh;
+}
+.spanimg21 {
+    position: relative;
+    top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url('images/wally.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin:  auto ;
+}
+.iconeys {
+    width: 80%;
+    height: 70px;
+    margin: 40px auto;
+}
+.iconeys i {
+    font-size: 30px;
+    border-radius: 50%;
+    color: whitesmoke;
+    margin: 10px 0px;
+}
+.social-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.337);
+    text-align: center;
+    margin: 10px ;
+}
+.social-icon:hover  {
+    background-color: white;
+}
+.social-icon:hover i {
+    color: black;
+}
+.copyright {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 100;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+
