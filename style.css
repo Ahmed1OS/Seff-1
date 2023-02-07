@@ -1,6 +1,7 @@
 *{
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    max-width: 100%;
 }
 .cont1 {
     width: 100vw;
