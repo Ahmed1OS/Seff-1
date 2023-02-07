@@ -516,9 +516,9 @@ color: white;
 }
 .plans {
     border: 3px solid whitesmoke;
-    width: 63.1%;
+    width: 908px;
     height: 500px;
-    margin: 50px 261px;
+    margin: 50px auto;
     border-radius: 4px;
 }
 .circle {
@@ -537,6 +537,7 @@ color: white;
     margin: 0px 0px;
     position: relative;
     z-index: 4;
+    border-radius: 4px;
 }
 .pone::after{
     position: absolute;
@@ -550,6 +551,8 @@ color: white;
     visibility: hidden;
     opacity: 0;
     transition: 1s;
+    border-radius: 4px;
+
 }
 .pone:hover::after {
     height: 500px;
